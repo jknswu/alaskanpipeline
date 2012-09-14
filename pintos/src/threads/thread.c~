@@ -143,6 +143,8 @@ thread_start (void)
   /* Start preemptive thread scheduling. */
   intr_enable ();
 
+  /* Start priority thread scheduling */
+
   /* Wait for the idle thread to initialize idle_thread. */
   sema_down (&idle_started);
 }
